@@ -1,2 +1,27 @@
-# kjell-bjorn
-Webdesign 1 Avans
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+<title>Mijn Web project</title>
+</head>
+<body>
+    <h1>Veel Verschillende projecten bij elkaar</h1>
+    <!--opdracht 1-->
+    <a href="nextsite1.html">kijk wat er zal gebeuren</a>
+    <br>
+    <a href="nextsite2.html">kijk wat er zal gebeuren (maar anders)</a>
+    <br>
+    <a href="mapsite.html">map</a>
+    <br>
+    <a href="tablesite.html">TOURNAMENT</a>
+    <br>
+    <a href="listsite.html">THE LIST</a>
+    <br>
+    <a href="youtubesite.html">filmpje</a>
+</body>
+
+
+
+
+</html>
