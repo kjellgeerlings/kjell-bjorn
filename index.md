@@ -3,7 +3,7 @@
 <html> 
 
 <head> 
-<title>Mijn Web project</title>
+Mijn Web project
 </head>
 <body>
     <h1>Veel Verschillende projecten bij elkaar</h1>
