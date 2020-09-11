@@ -14,7 +14,7 @@ Mijn Web project
     <br>
     <a href="tablesite.html">TOURNAMENT</a>
     <br>
-    <a href="listsite.html">THE LIST</a>
+    <a href="lijstje.html">THE LIST</a>
     <br>
     <a href="youtubesite.html">filmpje</a>
 </body>
