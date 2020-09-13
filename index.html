@@ -1,41 +1,52 @@
 <html lang="en">
 <head>
-<title>CSS Template</title>
+<title>Webdesign 1</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
+  /*daarboven staat gestolen code die de CSS delen van de code laten werken.*/
+  /*geeft aan wat voor soort "stylesheet" gebruikt wordt. border-box, betekent dat alles behandeld wordt als "boxen" met elk hun eigen elementen die aangepast kunnen worden.*/
   box-sizing: border-box;
 }
 
 body {
+  /*welke font alle text in de body zal hebben*/
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
+/*de stijl van de header (het bovenste blok)*/
 header {
+  /*kleur van het blok*/
   background-color: rgb(134, 194, 223);
+  /*hoe veel pixels het blok groter is dan de tekst vereist*/
   padding: 20px;
+  /*de positie van de text in relatie tot het "blok"*/
   text-align: center;
+  /*hoe groot de tekst is*/
   font-size: 40px;
+  /*kleur van de text*/
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
+/* maakt twee "boxen", die naast elkaar zitten */
 nav {
+  /*waar de ene box zweeft in relatie tot het hele scherm*/
   float: left;
+  /*hoeveel breedte de box opneemt in relatie tot de header*/
   width: 30%;
   background: rgb(255, 253, 253);
   padding: 0px;
 }
 
-/* Style the list inside the menu */
 nav ul {
+  /*het menu heeft nu nog geen unieke stijl*/
   list-style-type: none;
   font-color: white;
+  font-size: 35px;
   padding: 0;
 }
-
+/*de tweede "box"*/
 article {
   float: left;
   padding: 30px;
@@ -43,14 +54,14 @@ article {
   background-color: #f1f1f1;
   }
 
-/* Clear floats after the columns */
+/*zorgt dat er geen "boxen" overlopen tot de footer (gekopieerde code)*/
 section:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
+/*onderste blok*/
 footer {
   background-color: rgb(94, 209, 226);
   padding: 10px;
@@ -58,7 +69,7 @@ footer {
   color: white;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+/* zorgen dat de site zich kan aanpassen tot andere groottes (gekopieerde code)*/
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
@@ -69,57 +80,31 @@ footer {
 </head>
 <body>
 
-<h1>Web Design 1</h1>
-<p>Kjell en Björn hebben samen een site in elkaar gezet en voltooid de gevraagde opdrachten (hopelijk)</p>
-
 <header>
-  <h2>Navigatie</h2>
+  <h2>Home</h2>
 </header>
 
 <section>
   <nav>
     <ul>
-      <a href='nextsite1.html'>foto1</a>
+      <a href='about us.html'>Over ons</a>
       <br>
-      <a href='nextsite2.html'>foto2</a>
       <br>
-      <a href="mapsite.html">map</a>
-    <br>
-    <a href="tablesite.html">TOURNAMENT</a>
-    <br>
-    <a href="lijstje.html">THE LIST</a>
-    <br>
-    <a href="youtubesite.html">filmpje</a>
-    <br>
-    <a href='div.html'>different text</a> of 
-      <a href='DIVtest.html'>different text 2:electric boogaloo</a>
+      <a href="product.html">Onze Producten</a>
     </ul>
   </nav>
   
   <article>
-    <h1>Article</h1>
-   
-  </article>
+    <h1>Web Design 1</h1>
+    <p>Kjell en Björn hebben samen een site in elkaar gezet en voltooid de gevraagde opdrachten (hopelijk)</p>
+     <p>We hebben allebei de opdrachten zelf gemaakt en zijn bij elkaar gekomen om de site in elkaar te zetten met de beste aspecten van ons beide</p>
+      <p>Github is de host website, omdat het helpt met code delen en aanpassen, dus we hebben evenveel controle over elkaars code.</p>
+      <p>Door Github zo snel te gebruiken en leren kunnen wij in de toekomst efficiënter werken met de site/desktop programma.</p>
+      </article>
 </section>
 
 <footer>
-  <p><i>3636  Forest Avenue<br>
-    6791MP, John Plikken</i></p>
-  <br>
-  <br>
-  maandag 08:00 - 12:00
-  <br>
-  dinsdag 08:00 - 16:00
-  <br>
-  woensdag 08:00 - 16:00
-  <br>
-  donderdag 08:00 - 16:00
-  <br>
-  vrijdag 10:00 - 18:00
-  <br>
-  zaterdag gesloten
-  <br>
-  zondag 09:00 - 19:00
+    Kjell Geerlings & Björn van Bruchem 2020
 </footer>
 
 </body>
