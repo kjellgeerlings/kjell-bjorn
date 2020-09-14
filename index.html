@@ -3,80 +3,8 @@
 <title>Webdesign 1</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  /*daarboven staat gestolen code die de CSS delen van de code laten werken.*/
-  /*geeft aan wat voor soort "stylesheet" gebruikt wordt. border-box, betekent dat alles behandeld wordt als "boxen" met elk hun eigen elementen die aangepast kunnen worden.*/
-  box-sizing: border-box;
-}
 
-body {
-  /*welke font alle text in de body zal hebben*/
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/*de stijl van de header (het bovenste blok)*/
-header {
-  /*kleur van het blok*/
-  background-color: rgb(134, 194, 223);
-  /*hoe veel pixels het blok groter is dan de tekst vereist*/
-  padding: 20px;
-  /*de positie van de text in relatie tot het "blok"*/
-  text-align: center;
-  /*hoe groot de tekst is*/
-  font-size: 40px;
-  /*kleur van de text*/
-  color: white;
-}
-
-/* maakt twee "boxen", die naast elkaar zitten */
-nav {
-  /*waar de ene box zweeft in relatie tot het hele scherm*/
-  float: left;
-  /*hoeveel breedte de box opneemt in relatie tot de header*/
-  width: 30%;
-  background: rgb(255, 253, 253);
-  padding: 0px;
-}
-
-nav ul {
-  /*het menu heeft nu nog geen unieke stijl*/
-  list-style-type: none;
-  font-color: white;
-  font-size: 35px;
-  padding: 0;
-}
-/*de tweede "box"*/
-article {
-  float: left;
-  padding: 30px;
-  width: 70%;
-  background-color: #f1f1f1;
-  }
-
-/*zorgt dat er geen "boxen" overlopen tot de footer (gekopieerde code)*/
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*onderste blok*/
-footer {
-  background-color: rgb(94, 209, 226);
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* zorgen dat de site zich kan aanpassen tot andere groottes (gekopieerde code)*/
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
