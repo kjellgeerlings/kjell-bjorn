@@ -1,0 +1,49 @@
+body {
+    background: black;
+}
+nav {
+    background: black;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    background: -webkit-linear-gradient(left, red 20%, violet 40%, blueviolet 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  article {
+      background-color: black;
+  }
+  i {
+      color: limegreen;
+  }
+h2{
+    font-size: 72px;
+    background: -webkit-linear-gradient(lime 25%, cyan 50%, hotpink 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+font-family: 'Kufam';
+}
+h3 {
+    background: -webkit-linear-gradient(left,red 20%, orange 40%, hotpink 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+font-family: 'Kufam';
+}
+h1 { 
+    color: whitesmoke;
+}
+p:hover {
+    color: white;
+}
+header {
+    background-color:black;
+    padding: 1%;
+    text-align: center;
+    font-size: 40px;
+  }
+  footer {
+      background-color: black;
+  }
+
