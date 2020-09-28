@@ -33,7 +33,6 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #999999;
     position: fixed;
     top: 0;
     width: 100%;
@@ -41,11 +40,10 @@ nav ul {
 }
 
 nav ul li {
+    float: left;
     background-color: #999999;
 }
-nav li {
-    float: left;
-}
+
 
 nav li a {
     display: block;
