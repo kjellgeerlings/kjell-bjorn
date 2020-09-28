@@ -35,38 +35,54 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #7f7fff;
     position: fixed;
     top: 0;
     width: 100%;
     font-family: 'Share', cursive;
 }
 
-li {
+nav li {
     float: left;
+    background-color: #7f7fff;
 }
 
-li a {
+nav li a {
     display: block;
     color: #000000;
     padding: 8px 16px;
     text-decoration: none;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: #5555ff;
     color: white;
     text-decoration: none;
 }
    
-li a.active {
+nav li a.active {
     background-color: #4444ff;
     color: white;
 }
    
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
     background-color: #2222ff;
     color: white;
+}
+
+nav ul ul {
+    display: none;
+    position: relative;
+}
+
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+nav ul ul li {
+	width: 100%;
+	float:none;
+	display:list-item;
+	position: relative;
 }
 
 article {
