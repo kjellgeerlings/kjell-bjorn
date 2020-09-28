@@ -40,32 +40,52 @@ nav ul {
     font-family: 'Share', cursive;
 }
 
-li {
+nav ul li {
+    background-color: #999999;
+}
+nav li {
     float: left;
 }
 
-li a {
+nav li a {
     display: block;
     color: #000000;
     padding: 8px 16px;
     text-decoration: none;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: #555555;
     color: white;
     text-decoration: none;
 }
    
-li a.active {
+nav li a.active {
     background-color: #777777;
     color: white;
 }
    
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
     background-color: #666666;
     color: white;
 }
+
+nav ul ul {
+    display: none;
+    position: relative;
+}
+
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+nav ul ul li {
+	width: 100%;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
 
 article {
     float: left;
