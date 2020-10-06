@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="formulier.css">
   <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="overons.html">Over ons</a></li>
       <li><a href="product.html">Onze producten</a>
-          <ul> 
+        <ul> 
             <li><a href='nextsite1.html'>foto1</a></li>
             <li><a href='nextsite2.html'>foto2</a></li>
             <li><a href="mapsite.html">map</a></li>
@@ -27,7 +28,7 @@
             <li><a href='div.html'>different text</a></li>
         </ul>
       </li>
-      <li><a class="active" href="formulier.html">Formulier</a></li>
+      <li><a class="active">Formulier</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -44,13 +45,11 @@
       <form name="form" method="post" action="mailto:bjornvbruchem@gmail.com">
         <fieldset>
           <legend>Formulier</legend>
-          <p>Voornaam: &emsp;<input type="text" name="Voornaam" size="25%">&nbsp;<b>*</b></p>
-          <p>Achternaam: <input type="text" name="Achternaam" size="25%">&nbsp;<b>*</b></p>
-          <p>Geslacht:&emsp;
+          <p>Voornaam: <br class="fix1"> <input type="text" name="Voornaam">&nbsp;<b>*</b></p>
+          <p>Achternaam: <br class="fix2"> <input type="text" name="Achternaam">&nbsp;<b>*</b></p>
+          <p>Geslacht:<br class="break">
             <input type="radio" name="geslacht" value="man">Man
             <input type="radio" name="geslacht" value="vrouw">Vrouw
-            <input type="radio" name="geslacht" value="robot">Robot
-            <input type="radio" name="geslacht" value="vlinder">Vlinder&nbsp;<b>*</b></p>
           <p>Leeftijd:
             <select name="leeftijdscategorie" size="1">
               <option value="0-10"> 0-10</option>
@@ -64,9 +63,9 @@
           <br>
           <p>Noem je hobby's en/of sporten.
             <textarea name="hobbies" rows=4% cols=48%></textarea></p>
-          <p>Ben je weleens eerder in aanraking gekomen met websites?<br>Zo ja, wanneer en hoe?
+          <p>Ben je weleens eerder in aanraking gekomen met websites?<br>Zo ja, wanneer en hoe?<br class="break">
             <input type="radio" name="geslacht" value="man">Ja
-            <input type="radio" name="geslacht" value="vrouw">Nee
+            <input type="radio" name="geslacht" value="vrouw">Nee<br class="break">
             <textarea name="aanraking" rows=4% cols=48%></textarea></p>
           <br>
           <p>
@@ -100,13 +99,13 @@
     </article>
     <article class="rightbtm">
       <p>Omdat we nog ruimte over hebben, gaan wij vertellen over onze ervaring met websites en deze opdracht.</p>
-      <p class="name">Bjorn:</p>
+      <h5>Bjorn:</h5>
       <p>Op de middelbare school heb ik met informatica een paar websites gemaakt. Die websites bevatte meestal gewoon
-        leuke tekst, een paar plaatjes en hier en daar wat links. Maar dat was het dan ook. In het algemeen hebben we op
-        de middelbare héél weinig gedaan met websites. En de dingen die we hebben gedaan, die waren ook heel makkelijk
-        om te doen, niet echt een uitdaging. Dus ik ben heel nieuwsgierig over wat we hier allemaal gaan leren over
-        websites!</p>
-      <p class="name">Kjell:</p>
+        wat tekst, een paar plaatjes en hier en daar wat links. Maar verder kwam het niet. In het algemeen hebben we op
+        de middelbare héél weinig gedaan met websites. En de dingen die we hebben gedaan, die waren niet echt een
+        uitdaging.
+        Dus ik ben heel enthousiast over wat we hier allemaal gaan leren over websites!</p>
+      <h5>Kjell:</h5>
       <p>Als middelbare student heb ik 2 sites gebouwd, 1 zelf en de ander met een partner. Mijn website bevatte alleen
         maar HTML, maar mijn tweede website bevatte Bootstrap en PhP, je kon zelfs een formulier opsturen die je gegeven
         in de PhP database opsloeg. Ik kijk nu naar de toekomst en hoe ik echte site-structuur leer, GitHub leer
