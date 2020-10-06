@@ -8,8 +8,9 @@ p {
     margin: 1%;
 }
 
-p.name {
+h5 {
     margin: 1%;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -74,16 +75,15 @@ nav ul ul {
 }
 
 nav ul li:hover > ul {
-    display:inherit;
+    display: inherit;
 }
 
 nav ul ul li {
 	width: 100%;
-	float:none;
-	display:list-item;
+	float: none;
+	display: list-item;
 	position: relative;
 }
-
 
 article {
     float: left;
@@ -111,7 +111,6 @@ section:after {
     display: table;
     clear: both;
 }
-
 
 .tooltip {
     position: relative;
@@ -143,13 +142,25 @@ section:after {
 form {
     margin: 2.5%;
 }
-   
+
+br.fix1 {
+    content: "";
+    padding-left: 32px;
+}
+
+br.fix2 {
+    content: "";
+    padding-left: 13px;
+}
+
 input {
     font-family: Verdana;
+    size: 35%;
 }
    
 textarea {
     font-family: Verdana;
+    resize: vertical;
 }   
 
 fieldset {
@@ -175,12 +186,35 @@ footer {
     font-family: 'Share' , cursive;
     font-style: italic;
     color: white;
-
 }
   
 @media (max-width: 600px) {
     nav, article {
-      width: 100%;
+      width: 96%;
       height: auto;
+    }
+    br.fix1 {
+        content: normal;
+    }
+    br.fix2 {
+        content: normal;
+    }
+    br.break {
+        content: normal;
+    }
+    fieldset {
+        width: 92%;
+    }
+    textarea {
+        width: 40%;
+        resize: none;
+    }
+    article.right {
+        padding: 2%;
+        width: 96%;
+    }
+    article.rightbtm {
+        padding: 2%;
+        width: 96%;
     }
 }
