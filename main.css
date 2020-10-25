@@ -1,0 +1,992 @@
+/*  Base CSS  */
+
+    html {
+        height: 100%;
+        font-family: 'Kufam', cursive;
+        font-size: 23px;
+        margin: 0;
+        padding: 0;
+        display: block;
+        list-style: none;
+        content: none;
+    }
+
+    p {
+        margin: 1%;
+    }
+
+    .header {
+        grid-area: header;
+        margin-top: 2%;
+        background-color: #2222ff;
+        padding: 0.1%;
+        padding-left: 50px;
+        text-align: left;
+        font-family: 'Share', cursive;
+        font-size: 35px;
+        color: white;
+    }
+
+    /*  Body CSS  */
+
+    body {
+        background: rgb(0, 0, 0);
+        background: repeating-linear-gradient(180deg, #4444ff 0%, #aaaaff 50%, #4444ff 100%);
+    }
+
+
+    /*  Image CSS  */
+
+    .imglink > img {
+        width: 205px;
+        height: 205px;
+    }
+
+    a:hover.imglink {
+        filter: brightness(1.2);
+    }
+
+    a:active.imglink {
+        filter: invert(1);
+    }
+
+
+    /*  Icon CSS  */
+
+    #html {
+        color: blue;
+    }
+
+    #css {
+        color: lime;
+    }
+
+@media (min-width: 1026px) {
+    
+/*  Animation CSS  */
+
+    .anim {
+        height: 300px;
+        width: 300px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    .anim .mask { 
+        background-color: rgba(115,146,184, 0.7); 
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+        transition-property: opacity;
+        position: absolute;
+        overflow: hidden;
+        transform: translate(0px, -300px);
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .anim h2 {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        font-size: 17px;
+        padding: 10px;
+        background: rgba(54, 79, 134, 0.4);
+        margin: 20px 0 0 0
+    }
+    
+    .anim p {
+        font-family: Georgia, serif;
+        font-style: italic;
+        font-size: 16px;
+        position: relative;
+        color: #fff;
+        padding: 0px 0px 0px;
+        text-align: center;
+        transform: translate(-200px, -300px);
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .anim a.info {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 14px;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        box-shadow: 0 0 1px #000;
+        transform: translate(0px, 4000px);
+        transition: all 0.2s 0.1s ease-in-out;
+    }
+    
+    .anim:hover {
+        border-radius: 25px;
+        transition-duration: 0.2s;
+    }
+    
+    .anim:hover .mask { 
+        opacity: 1; 
+        transition-duration: 0.3s;
+    }	
+    
+    .anim:hover h2 { 
+        transform: translate(0px, -300px);
+        transition-delay: 0.3s; 
+    }
+    
+    .anim:hover p { 
+        transform: translate(0px, -300px); 
+        transition-delay: 0.4s;
+    }
+    
+    .anim:hover a.info { 
+        transform: translate(0px, -300px); 
+        transition-delay: 0.5s;
+        margin-top: 30%;
+    }
+    
+    .anim-kjell:hover h2 { 
+        transform: translate(-100px, 0px); 
+        transition-delay: 0.01s; 
+    }
+    
+    .anim-kjell:hover p { 
+        transform: translate(-100px, 0px); 
+        transition-delay: 0.4s;
+    }
+    
+    .anim-kjell:hover a.info { 
+        transform: translate(-100px, 0px); 
+        transition-delay: 0.5s;
+        margin-top: 20%;
+    }
+
+}
+
+
+/*  Desktop CSS  */
+
+    /*  Text CSS  */
+
+    .thick {
+        font-weight: bold;
+    }
+
+    .ref {
+        font-size: 28px;
+    }
+
+    .tiny {
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 20px;
+    }
+
+/*  Start  ----  Home CSS  */
+
+    .webdesign {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    hr.githr {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    hr.beforeelement {
+        display: none;
+    }
+
+
+    /*  Grid CSS  */
+
+    .article {
+        grid-area: article;
+    }
+
+    .right {
+        grid-area: right;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .figure {
+        grid-area: figure;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: #3333ff;
+        padding: 0.5%;
+        text-align: center;
+        font-family: 'Share', cursive;
+        font-style: italic;
+        color: white;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas: 'header header header'
+        'main article right'
+        'figcap figcap figcap'
+        'figure figure figure'
+        'footer footer footer';
+        grid-gap: 10px;
+    }
+
+    .figure {
+        display: grid;
+        grid-template-columns: repeat(3);
+        grid-template-rows: repeat(2);
+        grid-gap: 10px;
+        text-align: center;
+    }
+
+    .avanslogotext {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .buildingtext {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    .stefantext {
+        grid-column: 3 / 4;
+        grid-row: 1;
+    }
+
+    /*  Card CSS */
+
+    .figure > img {
+        width: 455px;
+        height: 455px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 2px darkblue;
+        filter: contrast(95%);
+        transition: 0.3s;
+    }
+
+    .figure > img:hover {
+        box-shadow: 4px 4px 4px 4px blue;
+        filter: contrast(120%);
+    }
+
+    #avanslogo {
+        grid-column-start: 1 / 2;
+        grid-row: 2;
+    }
+
+    #building {
+        grid-column-start: 2 / 3;
+        grid-row: 2;
+        width: 860px;
+    }
+
+    #stefan {
+        grid-column-start: 3 / 4;
+        grid-row: 2;
+    }
+
+/*  End  ----  Home CSS  */
+
+/*  Start  ----  Over ons CSS  */
+
+    /*  Grid CSS  */
+
+    .bjorn {
+        grid-area: bjorn;
+    }
+
+    .kjell {
+        grid-area: kjell;
+    }
+
+    .bjornimg {
+        grid-area: bjornimg;
+    }
+
+    .kjellimg {
+        grid-area: kjellimg;
+    }
+
+    .gridoverons {
+        display: grid;
+        grid-template-areas: 'header header header'
+        'bjorn bjorn bjornimg'
+        'kjellimg kjell kjell'
+        'footer footer footer';
+        grid-gap: 10px;
+    }
+
+    /*  Image CSS  */
+
+    .bjornimg > img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .kjellimg > img {
+        width: 300px;
+        height: 300px;
+        margin-left: 0;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+
+
+/*  End  ----  Over ons CSS  */
+
+
+/*  Start ---- Product CSS  */
+
+    .menu {
+        grid-area: menu;
+    }
+
+    .info {
+        grid-area: info;
+    }
+
+    .video {
+        grid-area: video;
+    }
+
+    .gridproduct {
+        display: grid;
+        grid-template-areas: 'header header header'
+        'menu info info'
+        'menu video video'
+        'menu footer footer';
+        grid-gap: 10px;
+    }
+
+    /*  Video CSS  */
+
+    iframe {
+        width: 800px;
+        height: 450px;
+        border: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .videolink {
+        display: none;
+    }
+
+    /*  Link CSS  */
+
+    .menu > p > a {
+        font-size: 26px;
+        display: block;
+        margin-top: 15px;
+    }
+
+
+    /*  HR CSS  */
+
+    .menu > hr {
+        display: inherit;
+    }
+
+    hr.beforeelement2 {
+        display: none;
+    }
+
+
+/*  End  ----  Product CSS  */
+
+/*  Start  ----  Contact CSS  */
+
+    body.contact {
+        font-family: 'Roboto', cursive;
+    }
+
+    /*  Map CSS  */
+
+    iframe.map {
+        width: 1100px;
+        height: 600px;
+        border: none;
+    }
+
+
+    /*  Grid CSS  */
+
+    .articlecontact {
+        grid-area: articlecontact;
+    }
+
+    .time {
+        grid-area: time;
+    }
+
+    .map {
+        grid-area: map;
+    }
+
+    .contact {
+        grid-area: contact;
+    }
+
+    .mail {
+        grid-area: mail;
+    }
+
+    .gridcontact {
+        display: grid;
+        grid-template-areas: 'header header header header header'
+        'articlecontact time contact contact contact'
+        'map map mail mail mail'
+        'footer footer footer footer footer';
+        grid-gap: 10px;
+    }
+
+/*  End  ----  Contact CSS  */
+
+    /*  Timeline CSS  */
+
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: black;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    .containertimeline {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+
+    .containertimeline::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid #FF9900;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .timelineleft {
+        left: -6.75%;
+    }
+
+    .timelineright {
+        left: 50%;
+    }
+
+    .timelineleft::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid blue;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent blue;
+    }
+
+    .timelineright::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid blue;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent blue transparent transparent;
+    }
+
+    .timelineright::after {
+        left: -16px;
+    }
+
+    .content {
+        padding: 20px 30px;
+        background-color: lightblue;
+        position: relative;
+        border-radius: 6px;
+    }
+
+
+    /*  Image CSS  */
+    
+    img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /*  Progress Bar CSS  */
+
+    .progressbar { 
+        height: 15px;
+        position: relative;
+        background: #bccfd4;
+        border-radius: 25px;
+        padding: 7px;
+    }
+
+    .progressbar > .bar {
+        display: block;
+        width: 50%;
+        height: 100%;
+        border-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-color: blue;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .progressbar > .barcss {
+        width: 50%;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background-color: lime;
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: -15px;
+    }
+
+
+    /*  Card Site CSS  */
+
+    .cardgrid {
+        display: grid;
+        grid-template-areas:
+        'one two three four'
+        'five six seven eight';
+        grid-gap: 10px;
+        font-size: 20px;
+    }
+
+    .card {
+        width: 247px;
+        height: 370px;
+        text-align: center;
+        box-shadow: 1px 1px 1px 1px gray;
+        background: linear-gradient(225deg, #bbf 0%, #99f 100%);
+        transition: 0.5s;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card > img {
+        width: 195px;
+        height: 295px;
+    }
+
+    .card:hover {
+        box-shadow: 4px 4px 4px 4px darkslategrey;
+    }
+
+    .cardcontainer {
+        text-align: center;
+    }
+
+
+/*  Tablet CSS  */
+
+@media (max-width: 1025px) {
+
+    /*  Header CSS  */
+
+    .header {
+        text-align: right;
+        padding-right: 50px;
+        font-size: 40px;
+    }
+
+    /*  Text CSS  */
+
+    .webdesign {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    iframe {
+        width: 500px;
+        height: 281px;
+    }
+
+    /*  Image Gallery CSS  */
+
+    .cardgrid {
+        display: grid;
+        grid-template-areas:
+        'one two three'
+        'four five six'
+        'seven eight nine';
+        grid-gap: 10px;
+        font-size: 20px;
+    }
+
+    /*  Animation CSS  */
+
+    .mask {
+        display: none;
+    }
+
+/*  Start  ----  Contact CSS  */
+
+    /*  Map CSS  */
+
+    iframe.map {
+        width: 1008px;
+        height: 500px;
+        border: none;
+    }
+
+
+    /*  Grid CSS  */
+
+    .gridcontact {
+        display: grid;
+        grid-template-areas: 'header header'
+        'articlecontact time'
+        'map map'
+        'contact mail'
+        'footer footer';
+        grid-gap: 10px;
+    }
+
+}
+
+
+/*  Phone CSS  */
+
+@media (max-width: 415px) {
+
+    .header {
+        padding: 0%;
+        text-align: right;
+        padding-right: 40px;
+        font-size: 26px;
+    }
+
+    /*  Text CSS  */
+
+    .thick {
+        font-size: 16px;
+    }
+
+    .ref {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    td {
+        width: 100px;
+    }
+
+    /*  Image Gallery CSS  */
+
+    .cardgrid {
+        display: grid;
+        grid-template-areas:
+        'one two'
+        'three four'
+        'five six'
+        'seven eight';
+        grid-gap: 10px;
+        font-size: 20px;
+    }
+
+
+/*  Start  ----  Home CSS  */
+
+
+    .tiny {
+        font-size: 10px;
+    }
+
+    .webdesign {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .tablettext {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .article > hr {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    hr.beforeelement {
+        display: inherit;
+        border: 1px dashed darkblue;
+    }
+
+
+    /*  Grid CSS (Phone)  */
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'article article article article article right'
+        'main main main main main main'
+        'figcap figcap figcap figcap figcap figcap'
+        'figure figure figure figure figure figure'
+        'footer footer footer footer footer footer';
+        grid-gap: 10px;
+    }
+
+
+    /*  Image CSS  */
+
+    .imglink > img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 45px;
+    }
+
+    .github {
+        margin-bottom: 0;
+    }
+    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    .figure {
+        display: grid;
+        grid-template-columns: repeat(3);
+        grid-template-rows: repeat(2);
+        grid-gap: 10px;
+        text-align: center;
+    }
+
+    .avanslogotext {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .buildingtext {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    .stefantext {
+        grid-column: 3 / 4;
+        grid-row: 1;
+    }
+
+    .figure > img {
+        object-fit: cover;
+    }
+
+    .figure > img:hover {
+        box-shadow: 3px 3px 3px 3px blue;
+    }
+
+    #avanslogo {
+        width: 125px;
+        height: 125px;
+        grid-column-start: 1 / 2;
+        grid-row: 2;
+    }
+
+    #building {
+        width: 125px;
+        height: 125px;
+        grid-column-start: 2 / 3;
+        grid-row: 2;
+    }
+
+    #stefan {
+        width: 125px;
+        height: 125px;
+        grid-column-start: 3 / 4;
+        grid-row: 2;
+    }
+
+/*  End  ----  Home CSS  */
+
+
+/*  Start  ----  Over ons CSS  */
+
+
+    /*  Grid CSS  */
+
+    .gridoverons {
+        display: grid;
+        grid-template-areas: 'header header header'
+        'bjorn bjorn bjornimg'
+        'kjellimg kjell kjell'
+        'footer footer footer';
+        grid-gap: 10px;
+    }
+
+    /*  Image CSS  */
+
+    .bjornimg > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .kjellimg > img {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+/*  End  ----  Over ons CSS  */
+
+
+/*  Start  ----  Product CSS  */
+
+    .productfooter {
+        display: flex;
+        align-items: center;
+    }
+
+    .gridproduct {
+        display: grid;
+        grid-template-areas: 'header header'
+        'menu info'
+        'menu video'
+        'menu footer';
+        grid-gap: 10px;
+    }
+
+    /*  Video CSS  */
+
+    iframe {
+        display: none;
+    }
+
+    iframe.map {
+        display: inherit;
+    }
+
+    .videolink {
+        display: block;
+    }
+
+    /*  HREF CSS  */
+
+    .menu > p > a {
+        font-size: 18px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    /*  HR CSS  */
+
+    hr.beforeelement2 {
+        display: inherit;
+        border: 1px dashed darkblue;
+    }
+
+/*  End  ----  Product CSS  */
+
+/*  Start  ----  Contact CSS  */
+
+    /*  Map CSS  */
+
+    iframe.map {
+        width: 400px;
+        height: 400px;
+        border: none;
+    }
+
+
+    /*  Grid CSS (Phone)  */
+
+    .gridcontact {
+        display: grid;
+        grid-template-areas:
+        'header header header'
+        'articlecontact articlecontact time'
+        'map map map'
+        'contact contact mail'
+        'footer footer footer';
+        grid-gap: 10px;
+    }
+
+/*  End  ----  Contact CSS  */
+
+
+/*  Timeline CSS  */
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .containertimeline {
+        width: 50%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .containertimeline::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .timelineleft::after, .timelineright::after {
+        left: 15px;
+    }
+    
+    .timelineright {
+        left: 0%;
+    }
+
+    h1.productheader {
+        font-size: 40px;
+    }
+
+}

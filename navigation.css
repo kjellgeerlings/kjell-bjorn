@@ -1,0 +1,143 @@
+/*  Nav Bar CSS  */
+
+    header {
+        width: 98%;
+        z-index: 10;
+        position: fixed;
+        top: 100;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        top: 6%;
+        margin-left: 25px;
+        position: fixed;
+        height: 6%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height: 5px;
+        width: 50px;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    .nav-toggle-label span::before, .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        bottom: 10px;
+    }
+
+    .nav-toggle-label span::after {
+        top: 10px;
+    }
+
+    nav {
+        position: relative;
+        text-align: left;
+        top: 100%;
+        left: 0;
+        background-color: #2222ff;
+        width: 50%;
+        transform: scale(0,1);
+        transform-origin: left;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    nav ul {
+        display: none;
+        margin: 0;
+        margin-top: 40px;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px ;
+        text-transform: uppercase;
+    }
+
+    nav a:hover {
+        color: #000;
+    }
+
+    .nav-toggle:checked ~ nav {
+        transform: scale(1,1);
+    }
+
+    .nav-toggle:checked ~ nav ul {
+        display: block;
+    }
+
+@media (min-width: 1069px) {
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        position: absolute;
+    }
+
+    nav {
+        position: relative;
+        text-align: left;
+        transition: none;
+        width: 100%;
+        transform: scale(1,1);
+        background: none;
+        top: initial;
+        left: initial;
+        align-items: right;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+
+    nav li {
+        margin-right: 2em;
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        background-color: #2222ff, 0;
+        padding: 20px;
+    }
+
+    nav a:hover {
+        background-color: darkblue;
+        color: white;
+        padding: 25px;
+    }
+
+    nav a.active {
+        background-color: darkblue;
+        color: white;
+    }
+
+    .activeform {
+        background-color: grey;
+    }
+
+}

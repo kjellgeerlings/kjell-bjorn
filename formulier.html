@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+  <title>Webdesign 1 - Formulier</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="navigation.css">
+  <link rel="stylesheet" type="text/css" href="formulier.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overons.html">Over ons</a></li>
+        <li><a href="product.html">Onze producten</a></li>
+        <li><a class="activeform">Formulier</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+  <div class="grid">
+    <div class="header">
+      <h1>Formulier</h1>
+    </div>
+
+    <div class="notice">
+      <p>Hier kunt u uw mening achterlaten over onze website.</p>
+      <p class="thick">Alle velden moeten ingevuld worden.</p>
+      <p>Wij vragen naar uw naam, zodat wij weten dat u in de toekomst nieuw commentaar heeft op
+        veranderingen aan de site.</p>
+      <p>Wanneer u het formulier verzendt wordt u verwezen naar een andere pagina en krijgt u verificatie dat het
+        formulier ingevuld is.</p>
+    </div>
+
+    <div class="form">
+      <form name="form" method="post" action="verificatie.html">
+        <fieldset>
+          <legend>Formulier</legend>
+          <div>
+            <p>
+              Voornaam: <input type="text" name="Voornaam">
+            </p>
+          </div>
+          <div>
+            <p>
+              Achternaam: <input type="text" name="Achternaam">
+            </p>
+          </div>
+          <p>
+            Wat voor cijfer geef je de website?
+          </p>
+          <p>
+            <select name="Cijfer">
+              <option value="1"> 1</option>
+              <option value="2"> 2</option>
+              <option value="3"> 3</option>
+              <option value="4"> 4</option>
+              <option value="5"> 5</option>
+              <option value="6"> 6</option>
+              <option value="7"> 7</option>
+              <option value="8"> 8</option>
+              <option value="9"> 9</option>
+              <option value="10"> 10</option>
+            </select>
+          </p>
+          <p>
+            Is alle informatie snel te vinden vanuit de home-pagina?
+          </p>
+          <p><input type="radio" name="quickfind">Ja</p>
+          <p><input type="radio" name="quickfind">Nee</p>
+          <p>Welke onderdelen op de home-pagina trokken jouw interesse het meest? Je kunt meerdere antwoorden aanvinken.
+          </p>
+          <p><input type="checkbox" name="interest">Navigatiemenu</p>
+          <p><input type="checkbox" name="interest">Introductietekst</p>
+          <p><input type="checkbox" name="interest">Referenties</p>
+          <p><input type="checkbox" name="interest">Cards / Foto's</p>
+          <p>Wat zou jij veranderen om je aandacht nog meer te pakken?
+            <textarea name="veranderen"></textarea>
+          </p>
+          <p>
+            Commentaar en toelichtingen:
+            <textarea name="Commentaar"></textarea>
+          </p>
+          <p><input type="submit" value="Verstuur dit formulier" name="verzend" class="button">
+          <input type="reset" value="Wissen" name="wis" class="button"></p>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="footer">
+      Kjell Geerlings & Bjorn van Bruchem 2020
+    </div>
+
+</body>
+
+</html>

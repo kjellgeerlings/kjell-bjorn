@@ -1,0 +1,209 @@
+/*  Body CSS  */
+
+    body {
+        background: repeating-linear-gradient(180deg, #ccc 0%, #aaa 50%, #ccc 100%);
+    }
+
+    nav a:hover {
+        background-color: grey;
+    }
+
+    /*  Form Nav CSS  */
+
+    @media (max-width: 1026px) {
+
+        nav {
+            background-color: grey;
+        }
+
+    }
+
+/*  Grid CSS  */
+
+    .header {
+        background-color: #999;
+        text-align: left;
+    }
+
+    .notice {
+        grid-area: notice;
+        background-color: #999;
+        color: red;
+    }
+
+    .form {
+        grid-area: form;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: #999;
+        padding: 0.5%;
+        text-align: center;
+        font-family: 'Share', cursive;
+        font-style: italic;
+        color: white;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas: 'header'
+        'notice'
+        'form'
+        'footer';
+        grid-gap: 10px;
+    }
+
+    /*  Form CSS  */
+
+    fieldset {
+        border: double;
+        border-color: #000000;
+    }
+
+    legend {
+        color: #000000;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    input[type=text] {
+        font-family: Verdana;
+        size: 250px;
+    }
+    
+    textarea {
+        width: 350px;
+        height: 100px;
+        font-family: Verdana;
+        resize: vertical;
+    }
+
+    select {
+        width: 50px;
+    }
+
+
+    /*  Button CSS  */
+
+    .button {
+        background-color: white;
+        border: 1px solid black;
+        padding: 8px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .button:hover {
+        box-shadow: 2px 2px 2px 2px darkslategrey;
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+
+    .figure > a > .button {
+        width: 20%;
+    }
+
+    .figure {
+        text-align: center;
+    }
+
+    .figure > img {
+        box-shadow: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .figure > img:hover {
+        box-shadow: none;
+    }
+
+
+/*  Desktop CSS  */
+
+@media (max-width: 1921px) {
+
+    /*  Text CSS  */
+
+    .thick {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .notice > p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*  Form CSS  */
+
+    fieldset {
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
+    }
+
+}
+
+
+/*  Tablet CSS  */
+
+@media (max-width: 1025px) {
+
+    /*  Header CSS  */
+
+    .header {
+        font-size: 40px;
+        text-align: right;
+    }
+
+}
+
+
+/*  Phone CSS  */
+
+@media (max-width: 415px) {
+
+    /*  Header CSS  */
+
+    .header {
+        padding: 0%;
+        text-align: right;
+        padding-right: 40px;
+        font-size: 26px;
+    }
+
+    /*  Text CSS  */
+
+    p {
+        font-size: 18px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .notice > p {
+        font-size: 14px;
+    }
+
+    /*  Form CSS  */
+
+    fieldset {
+        width: 360px;
+    }
+
+    /*  Image CSS  */
+
+    .figure > img {
+        width: 250px;
+        height: 250px;
+    }
+
+}
